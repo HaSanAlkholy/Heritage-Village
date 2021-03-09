@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/vendor/all.min.css" />
+    <link rel="stylesheet" href="./css/vendor/linear.css" />
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/vendor/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="./css/vendor/aos.css" />
+    <link rel="stylesheet" href="./css/vendor/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/vendor/lightgallery.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <title>القرية الشعبية</title>
+  </head>
+
+  <body class="overflow">
+    <div class="pre-loader">
+      <div class="content">
+        <div class="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="container">
+        <div class="nav-bottom">
+          <div class="nav-logo">
+            <a href="./index.html"><img src="./images/logo.png" alt=".." /></a>
+          </div>
+          <div class="nava" id="nava">
+            <div class="nava-content">
+              <div class="nava-head">
+                <div class="top-setting nav-lang">
+                  <span class="setting-anchor">
+                    <img src="./images/icons/ar.png" alt="ar" /> العربية
+                    <span class="lnr lnr-chevron-down down"></span>
+                  </span>
+                  <div class="top-dropDown">
+                    <a href="./menu.html" class="drop-link fixall">العربية</a>
+                    <a href="./menu-en.html" class="drop-link fixall">
+                      English</a
+                    >
+                  </div>
+                </div>
+                <div class="nava-close" id="close-nava">
+                  <span class="lnr lnr-cross"></span>
+                </div>
+              </div>
+              <ul>
+                <li><a href="./index.html"> الرئيسية</a></li>
+                <li><a href="#about"> عن القرية</a></li>
+                <li class="top-setting sm-slide slide">
+                  <a class="setting-anchor drop"
+                    >التراث <span class="lnr lnr-chevron-down down"></span
+                  ></a>
+                  <div class="top-dropDown">
+                    <a href="#" class="drop-link fixall"
+                      >متحف تراثي وآثار ومخطوطات</a
+                    >
+                    <a href="#" class="drop-link fixall"
+                      >متحف سيارات كلاسيكيه</a
+                    >
+                    <a href="#" class="drop-link fixall">متحف حيوانات محنطه</a>
+                    <a href="#" class="drop-link fixall"
+                      >متحف مجسمات قرى المملكة</a
+                    >
+                  </div>
+                </li>
+                <li><a href="#legacy"> الترفيه</a></li>
+                <li><a href="./menu.html"> المطعم</a></li>
+                <li><a href="#gallery"> معرض الصور</a></li>
+                <li><a href="#news"> الأخبار</a></li>
+                <li><a href="#"> اتصل بنا</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-icons flex-center">
+            <div class="nava-btn nav-icon" id="nava-icon">
+              <div class="ico-btn">
+                <span class="lnr lnr-menu"></span>
+              </div>
+            </div>
+            <div class="search-btn nav-icon" id="search-btn">
+              <div class="ico-btn">
+                <span class="lnr lnr-magnifier"></span>
+              </div>
+            </div>
+            <div class="top-setting nav-lang">
+              <span class="setting-anchor">
+                <img src="./images/icons/ar.png" alt="ar" /> العربية
+                <span class="lnr lnr-chevron-down down"></span>
+              </span>
+              <div class="top-dropDown">
+                <a href="./menu.html" class="drop-link fixall">العربية</a>
+                <a href="./menu-en.html" class="drop-link fixall"> English</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-form" id="search-form">
+      <div class="close-search" id="close-search">
+        <span class="lnr lnr-cross"></span>
+      </div>
+      <div class="search">
+        <div class="search-content">
+          <form action="#">
+            <div class="input-form">
+              <input type="text" placeholder="ابحث عن ما تريد.." />
+              <button class="search-btn flex-center">
+                <span class="lnr lnr-magnifier"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section class="breadcrumb-container">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">المطعم</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            قائمة الطعام
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <div class="categories-content">
+          <div
+            class="footer-list"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+            data-target="#collapse2"
+            aria-expanded="false"
+            aria-controls="collapse2"
+          >
+            <div class="head s-head">
+              <img src="./images/icons/head2.png" alt=".." />
+              <h3>الأصناف <span class="lnr lnr-chevron-down"></span></h3>
+            </div>
+            <div class="goDown" id="collapse2">
+              <ul>
+                <li><a href="#">ولائج القرية</a></li>
+                <li><a href="#">المقبلات الباردة</a></li>
+                <li><a href="#"> المعجنات والسمبوسات</a></li>
+                <li><a href="#">الشوربات</a></li>
+                <li><a href="#">المشروبات الباردة</a></li>
+                <li><a href="#"> مشويات بلدي 100%</a></li>
+                <li><a href="#"> بحريات الساحل الشرقي</a></li>
+                <li><a href="#">مندى ومظبي القرية</a></li>
+                <li><a href="#">مقلوبة القرية المميزة (حجز مسبق)</a></li>
+                <li><a href="#"> برياني القرية المميز </a></li>
+                <li><a href="#"> مكبوسة القرية المميزة</a></li>
+                <li><a href="#">كبسة القرية المميزة</a></li>
+                <li><a href="#"> مثلوثة القرية المميزة</a></li>
+                <li><a href="#">سليق القرية المميزة</a></li>
+                <li><a href="#">شعبيات المملكة</a></li>
+                <li><a href="#">الحلويات</a></li>
+                <li><a href="#">المشروبات الساخنة</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="food-category">
+      <div class="container">
+        <div class="food-content">
+          <div class="food-banner">
+            <a href="#">
+              <img src="./images/menu/1.jpg" alt=".." />
+              <h3>ولائج القرية</h3>
+            </a>
+          </div>
+          <div class="products">
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/1.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة خضراء </a></h4>
+                <p>السعرات الحرارية: <span>149 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/2.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> بابا غنوج </a></h4>
+                <p>السعرات الحرارية: <span>323 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/3.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة ثمار البحر </a></h4>
+                <p>السعرات الحرارية: <span>333 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">27</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/4.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> حمص </a></h4>
+                <p>السعرات الحرارية: <span>564 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/5.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> خيار باللبن </a></h4>
+                <p>السعرات الحرارية: <span>93 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">14</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/6.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> ورق عنب </a></h4>
+                <p>السعرات الحرارية: <span>160 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">20</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/7.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> صحن مقبلات مشكل </a></h4>
+                <p>السعرات الحرارية: <span>434 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">37</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/8.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> متبل </a></h4>
+                <p>السعرات الحرارية: <span>522 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="food-category">
+      <div class="container">
+        <div class="food-content">
+          <div class="food-banner">
+            <a href="#">
+              <img src="./images/menu/2.jpg" alt=".." />
+              <h3>المقبلات الباردة</h3>
+            </a>
+          </div>
+          <div class="products">
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/1.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة خضراء </a></h4>
+                <p>السعرات الحرارية: <span>149 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/2.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> بابا غنوج </a></h4>
+                <p>السعرات الحرارية: <span>323 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/3.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة ثمار البحر </a></h4>
+                <p>السعرات الحرارية: <span>333 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">27</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/4.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> حمص </a></h4>
+                <p>السعرات الحرارية: <span>564 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/5.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> خيار باللبن </a></h4>
+                <p>السعرات الحرارية: <span>93 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">14</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/6.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> ورق عنب </a></h4>
+                <p>السعرات الحرارية: <span>160 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">20</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/7.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> صحن مقبلات مشكل </a></h4>
+                <p>السعرات الحرارية: <span>434 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">37</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/8.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> متبل </a></h4>
+                <p>السعرات الحرارية: <span>522 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="food-category">
+      <div class="container">
+        <div class="food-content">
+          <div class="food-banner">
+            <a href="#">
+              <img src="./images/menu/3.jpg" alt=".." />
+              <h3>المعجنات والسمبوسات</h3>
+            </a>
+          </div>
+          <div class="products">
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/1.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة خضراء </a></h4>
+                <p>السعرات الحرارية: <span>149 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/2.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> بابا غنوج </a></h4>
+                <p>السعرات الحرارية: <span>323 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/3.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة ثمار البحر </a></h4>
+                <p>السعرات الحرارية: <span>333 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">27</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/4.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> حمص </a></h4>
+                <p>السعرات الحرارية: <span>564 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/5.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> خيار باللبن </a></h4>
+                <p>السعرات الحرارية: <span>93 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">14</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/6.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> ورق عنب </a></h4>
+                <p>السعرات الحرارية: <span>160 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">20</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/7.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> صحن مقبلات مشكل </a></h4>
+                <p>السعرات الحرارية: <span>434 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">37</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/8.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> متبل </a></h4>
+                <p>السعرات الحرارية: <span>522 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="food-category">
+      <div class="container">
+        <div class="food-content">
+          <div class="food-banner">
+            <a href="#">
+              <img src="./images/menu/4.jpg" alt=".." />
+              <h3>الشوربات</h3>
+            </a>
+          </div>
+          <div class="products">
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/1.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة خضراء </a></h4>
+                <p>السعرات الحرارية: <span>149 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/2.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> بابا غنوج </a></h4>
+                <p>السعرات الحرارية: <span>323 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/3.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة ثمار البحر </a></h4>
+                <p>السعرات الحرارية: <span>333 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">27</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/4.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> حمص </a></h4>
+                <p>السعرات الحرارية: <span>564 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/5.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> خيار باللبن </a></h4>
+                <p>السعرات الحرارية: <span>93 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">14</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/6.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> ورق عنب </a></h4>
+                <p>السعرات الحرارية: <span>160 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">20</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/7.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> صحن مقبلات مشكل </a></h4>
+                <p>السعرات الحرارية: <span>434 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">37</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/8.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> متبل </a></h4>
+                <p>السعرات الحرارية: <span>522 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="food-category">
+      <div class="container">
+        <div class="food-content">
+          <div class="food-banner">
+            <a href="#">
+              <img src="./images/menu/5.jpg" alt=".." />
+              <h3>المشروبات الباردة</h3>
+            </a>
+          </div>
+          <div class="products">
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/1.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة خضراء </a></h4>
+                <p>السعرات الحرارية: <span>149 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/2.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> بابا غنوج </a></h4>
+                <p>السعرات الحرارية: <span>323 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/3.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة ثمار البحر </a></h4>
+                <p>السعرات الحرارية: <span>333 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">27</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/4.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> حمص </a></h4>
+                <p>السعرات الحرارية: <span>564 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/5.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> خيار باللبن </a></h4>
+                <p>السعرات الحرارية: <span>93 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">14</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/6.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> ورق عنب </a></h4>
+                <p>السعرات الحرارية: <span>160 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">20</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/7.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> صحن مقبلات مشكل </a></h4>
+                <p>السعرات الحرارية: <span>434 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">37</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/8.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> متبل </a></h4>
+                <p>السعرات الحرارية: <span>522 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="food-category">
+      <div class="container">
+        <div class="food-content">
+          <div class="food-banner">
+            <a href="#">
+              <img src="./images/menu/6.jpg" alt=".." />
+              <h3>مشويات بلدي 100%</h3>
+            </a>
+          </div>
+          <div class="products">
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/1.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة خضراء </a></h4>
+                <p>السعرات الحرارية: <span>149 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/2.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> بابا غنوج </a></h4>
+                <p>السعرات الحرارية: <span>323 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/3.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> سلطة ثمار البحر </a></h4>
+                <p>السعرات الحرارية: <span>333 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">27</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/4.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> حمص </a></h4>
+                <p>السعرات الحرارية: <span>564 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/5.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> خيار باللبن </a></h4>
+                <p>السعرات الحرارية: <span>93 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">14</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/6.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> ورق عنب </a></h4>
+                <p>السعرات الحرارية: <span>160 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">20</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/7.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> صحن مقبلات مشكل </a></h4>
+                <p>السعرات الحرارية: <span>434 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">37</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product-img">
+                <img src="./images/products/8.jpg" alt=".." />
+              </div>
+              <div class="product-txt">
+                <h4><a href="#"> متبل </a></h4>
+                <p>السعرات الحرارية: <span>522 </span></p>
+              </div>
+              <div class="price">
+                <div class="num">18</div>
+                <div class="cur">ريال</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <picture>
+        <source
+          media="(max-width:576px)"
+          srcset="./images/icons/pattern-sm.png"
+        />
+        <img src="./images/icons/pattern.png" alt=".." class="pattern" />
+      </picture>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="./images/footer-logo.png" alt=".." />
+            <p>
+              تعد القرية الشعبية إحدى المعالم السياحية البارزة بالمنطقة الشرقية،
+              حيث أن زيارتها تغني المرء عن التجوال وتختصر المسافات. ويمكن للزائر
+              الكريم التعرف على الحضارة السعودية
+            </p>
+            <div class="social flex-center">
+              <div class="social-icon snap">
+                <a class="flex-center" href="#">
+                  <i class="fab fa-snapchat-ghost"></i>
+                </a>
+              </div>
+              <div class="social-icon snap">
+                <a class="flex-center" href="#">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+              <div class="social-icon insta">
+                <a class="flex-center" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <div class="social-icon twitter">
+                <a class="flex-center" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div class="social-icon facebook">
+                <a class="flex-center" href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="info footer-list"
+            data-aos="fade-left"
+            data-aos-delay="0"
+            data-target="#collapse1"
+            aria-expanded="false"
+            aria-controls="collapse1"
+          >
+            <div class="head">
+              <h4>روابط سريعة <span class="lnr lnr-chevron-down"></span></h4>
+            </div>
+            <div class="goDown" id="collapse1">
+              <ul>
+                <li><a href="#">مطعم تراثي وجلسات تراثية</a></li>
+                <li><a href="#">سوق القرية </a></li>
+                <li><a href="#">قاعة اجتماعات </a></li>
+                <li><a href="#">مطعم تراثي بحري </a></li>
+                <li><a href="#">معهد تدريب للكوادر على الضيافة والطهي </a></li>
+                <li><a href="#">متحف سيارات كلاسيكيه </a></li>
+                <li><a href="#">قسم الطلبات الخارجيه </a></li>
+                <li><a href="#">متحف تراثي وآثار ومخطوطات </a></li>
+                <li><a href="#">موقع مزاد للتراث </a></li>
+                <li><a href="#">مقهى تراثي </a></li>
+                <li><a href="#">متحف حيوانات محنطه </a></li>
+                <li><a href="#">موقع لتواجد الحرفيين </a></li>
+                <li><a href="#">قاعة نجد للاحتفالات </a></li>
+                <li><a href="#">متحف مجسمات قرى المملكة </a></li>
+                <li><a href="#">صالة العاب </a></li>
+                <li><a href="#">قاعة الساحل الشرقي للاحتفالات </a></li>
+                <li><a href="#">مطعم افراد </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="credit">
+          <p>جميع الحقوق محفوظة، القرية الشعبية &copy; 2021</p>
+          <p>
+            تصميم وتطوير
+            <a href="https://tasawk.com.sa/" target="_blank"
+              ><img src="./images/icons/footer.png" alt=".."
+            /></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="up"
+      class="up flex-center"
+      onclick="window.scroll({top: 0,behavior: 'smooth'});"
+    >
+      <span class="lnr lnr-chevron-up"></span>
+    </div>
+
+    <script src="./js/vendor/jquery.min.js"></script>
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/vendor/swiper-bundle.js"></script>
+    <script src="./js/vendor/aos.js"></script>
+    <script src="./js/vendor/lightgallery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
